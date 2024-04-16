@@ -1,0 +1,16 @@
+name: 'CodeGPT PR Assistant'
+description: 'A helpful assistant that reviews pull requests and provides code suggestions.'
+author: 'PedroCavalheiro@isat'
+inputs:
+  OPENAI_ASSISTANT_ID:
+    description: 'ID of the OpenAI assistant.'
+    required: true
+outputs:
+  response:
+    description: 'The output message from processing the event.'
+runs:
+  using: node20
+  main: dist/index.js
+branding:
+  icon: 'code'
+  color: 'blue'
